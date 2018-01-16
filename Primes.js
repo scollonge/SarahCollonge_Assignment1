@@ -21,8 +21,9 @@ function IsPrime(value) {
 for (var primeCount = 0, number = 2; ; IsPrime(number++)) {
     if (IsPrime(number) == true) {
         primeCount++
-        console.log(number, primeCount)
     }
-    if (primeCount == 1000)
+    if (primeCount == 1000){
+        console.log(number)
         break
+    }
 }
